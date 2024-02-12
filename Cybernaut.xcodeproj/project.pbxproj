@@ -318,7 +318,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0920;
 				LastUpgradeCheck = 0930;
-				ORGANIZATIONNAME = "Jonathan Yang";
+				ORGANIZATIONNAME = "Kanchan Naik";
 				TargetAttributes = {
 					84C9275C203E87FB00711A66 = {
 						CreatedOnToolsVersion = 9.2;
@@ -567,7 +567,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 7947RL28M2;
+				DEVELOPMENT_TEAM = F34HQ9BUH3;
 				INFOPLIST_FILE = Cybernaut/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -585,7 +585,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 7947RL28M2;
+				DEVELOPMENT_TEAM = F34HQ9BUH3;
 				INFOPLIST_FILE = Cybernaut/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

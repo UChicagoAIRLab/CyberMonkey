@@ -1,15 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "astro_right.png",
+      "filename" : "Astro_facing_right@1x.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
+      "filename" : "Astro_facing_right@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
+      "filename" : "Astro_facing_right@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

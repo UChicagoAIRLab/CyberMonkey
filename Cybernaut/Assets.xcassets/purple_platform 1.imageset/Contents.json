@@ -1,15 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "PURPLE_PLATFORM.png",
+      "filename" : "Platform5Across_Blue@1x.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
+      "filename" : "Platform5Across_Blue@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
+      "filename" : "Platform5Across_Blue@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

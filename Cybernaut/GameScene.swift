@@ -493,10 +493,10 @@ class GameScene: SKScene, SKPhysicsContactDelegate, StackViewDelegate {
         let screenSize = UIScreen.main.bounds
         let screenWidth = screenSize.width
         let screenHeight = screenSize.height
-        TPrompt.position = CGPoint(x: player.position.x - screenWidth * 3/4,
-                                   y: player.position.y - screenHeight * 1/2)
-        FPrompt.position = CGPoint(x: player.position.x + screenWidth * 3/4,
-                                   y: player.position.y - screenHeight * 1/2)
+        TPrompt.position = CGPoint(x: player.position.x - screenWidth * 1/3,
+                                   y: player.position.y - screenHeight * 2/3)
+        FPrompt.position = CGPoint(x: player.position.x + screenWidth * 1/3,
+                                   y: player.position.y - screenHeight * 2/3)
     }
     
     func createForegroundOverlay(_ overlayTemplate:
@@ -757,10 +757,19 @@ class GameScene: SKScene, SKPhysicsContactDelegate, StackViewDelegate {
     
    func setupSecondChanceQuiz() {
         // Menu setup with stackView
+       guard let view = self.view else {
+           return
+       }
         let screenSize = UIScreen.main.bounds
-        let screenWidth = screenSize.width
+        let scale = view.bounds.size.height / self.size.height
+       /*
+        let scale = view.bounds.size.height / self.size.height
+        let scaledWidth = self.size.width * scale
+        let scaledOverlap = scaledWidth - view.bounds.size.width
+        */
+       let screenWidth = screenSize.width
         let screenHeight = screenSize.height
-        gameMenuView.frame = CGRect(x: 0, y: 100, width: screenWidth, height: screenHeight * 0.8)
+       gameMenuView.frame = CGRect(x: 0, y: 100, width: screenWidth * 0.5, height: screenHeight * 0.5)
         self.view!.addSubview(gameMenuView)
         gameMenuView.delegate = self
         gameState = .paused

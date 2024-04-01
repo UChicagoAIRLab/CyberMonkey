@@ -1,21 +1,23 @@
 {
   "images" : [
     {
+      "filename" : "Coin3_Instagram@1x.png",
       "idiom" : "universal",
-      "filename" : "instagram-colourful-icon.png",
       "scale" : "1x"
     },
     {
+      "filename" : "Coin3_Instagram@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
+      "filename" : "Coin3_Instagram@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }
   ],
   "info" : {
-    "version" : 1,
-    "author" : "xcode"
+    "author" : "xcode",
+    "version" : 1
   }
 }

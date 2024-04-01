@@ -1,15 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "snap_icon.png",
+      "filename" : "Coin2_Snapchat@1x.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
+      "filename" : "Coin2_Snapchat@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
+      "filename" : "Coin2_Snapchat@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

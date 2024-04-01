@@ -1,15 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "facebook.png",
+      "filename" : "Coin4_Facebook@1x.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
+      "filename" : "Coin4_Facebook@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
+      "filename" : "Coin4_Facebook@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

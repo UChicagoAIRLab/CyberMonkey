@@ -1,16 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "Untitled design (8).png",
+      "filename" : "bg_sky_2@1x.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "Untitled design (8) 1.png",
+      "filename" : "bg_sky_2@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
+      "filename" : "bg_sky_2@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

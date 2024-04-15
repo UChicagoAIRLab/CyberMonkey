@@ -760,6 +760,8 @@ class GameScene: SKScene, SKPhysicsContactDelegate, StackViewDelegate {
        guard let view = self.view else {
            return
        }
+       
+
         let screenSize = UIScreen.main.bounds
         let scale = view.bounds.size.height / self.size.height
        /*
@@ -767,9 +769,10 @@ class GameScene: SKScene, SKPhysicsContactDelegate, StackViewDelegate {
         let scaledWidth = self.size.width * scale
         let scaledOverlap = scaledWidth - view.bounds.size.width
         */
-       let screenWidth = screenSize.width
+       let screenWidth = view.bounds.size.width
         let screenHeight = screenSize.height
-       gameMenuView.frame = CGRect(x: 0, y: 100, width: screenWidth * 0.5, height: screenHeight * 0.5)
+       gameMenuView.frame = CGRect(x: 0, y: 100, width: screenWidth, height: screenHeight * 0.5)
+
         self.view!.addSubview(gameMenuView)
         gameMenuView.delegate = self
         gameState = .paused

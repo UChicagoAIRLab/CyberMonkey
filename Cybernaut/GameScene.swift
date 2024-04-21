@@ -547,7 +547,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate, StackViewDelegate {
         let bottomOfScreenYFg = convert(CGPoint(x: 0, y: bottomOfScreenY), to: fgNode).y
         let lavaVelocityY = CGFloat(120)
         let lavaStep = lavaVelocityY * CGFloat(dt)
-        var newLavaPositionY = lava.position.y + lavaStep
+        var newLavaPositionY = lava.position.y + lavaStep / 2
         // 4
         newLavaPositionY = max(newLavaPositionY, (bottomOfScreenYFg - 125.0))
         // 5

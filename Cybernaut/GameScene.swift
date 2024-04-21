@@ -150,6 +150,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate, StackViewDelegate {
     
     var player: SKSpriteNode!
     var platform5Across: SKSpriteNode!
+    var platform2Across: SKSpriteNode!
     var platformArrow: SKSpriteNode!
     var platformDiagonal: SKSpriteNode!
     var break5Across: SKSpriteNode!
@@ -596,8 +597,11 @@ class GameScene: SKScene, SKPhysicsContactDelegate, StackViewDelegate {
     
     // Updates value and position of score label
     func updateScore() {
+        guard let view = self.view else {
+            return
+        }
         let screenSize = UIScreen.main.bounds
-        let screenHeight = screenSize.height
+        let screenHeight = view.bounds.size.height
         let bottomOfScreenY = camera!.position.y - (size.height / 2)
         currentScore.position.y = bottomOfScreenY + screenHeight - 10
         currentScore.text = String(format: "%d", GameState.sharedInstance.score)
@@ -723,6 +727,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate, StackViewDelegate {
         fgNode.childNode(withName: "Bomb")?.run(SKAction.hide())
         
         platform5Across = loadForegroundOverlayTemplate("Platform5Across")
+        platform2Across = loadForegroundOverlayTemplate("Platform2Across")
         platformArrow = loadForegroundOverlayTemplate("PlatformArrow")
         breakArrow = loadForegroundOverlayTemplate("BreakArrow")
         platformDiagonal = loadForegroundOverlayTemplate("PlatformDiagonal")
@@ -885,7 +890,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate, StackViewDelegate {
         lava = fgNode.childNode(withName: "Lava") as! SKSpriteNode
         let emitter = SKEmitterNode(fileNamed: "Lava.sks")!
         emitter.particlePositionRange = CGVector(dx: size.width * 1.125, dy: 0.0)
-        emitter.advanceSimulationTime(3.0)
+        emitter.advanceSimulationTime(1.5)
         lava.addChild(emitter)
     }
     
@@ -1025,16 +1030,21 @@ class GameScene: SKScene, SKPhysicsContactDelegate, StackViewDelegate {
     
     func addRandomForegroundOverlay() {
         let overlaySprite: SKSpriteNode!
-        let platform5AcrossPercentage = 17
-        let platformArrowAPercentage = 34
-        let platformDiagonalPercentage = 51
-        let break5AcrossPercentage = 68
-        let breakArrowPercentage = 85
+        let platform5AcrossPercentage = 18
+        let platform2AcrossPercentage = 35
+        let platformArrowAPercentage = 53
+        let platformDiagonalPercentage = 70
+        let break5AcrossPercentage = 80
+        let breakArrowPercentage = 90
         let random = Int(arc4random_uniform(100)+1)
         
         // Platform5Across
         if random <= platform5AcrossPercentage {
             overlaySprite = platform5Across
+        }
+        
+        else if random <= platform2AcrossPercentage {
+            overlaySprite = platform2Across
         }
         
         // PlatformArrow

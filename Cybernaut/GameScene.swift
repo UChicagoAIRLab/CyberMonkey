@@ -603,7 +603,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate, StackViewDelegate {
         let screenSize = UIScreen.main.bounds
         let screenHeight = view.bounds.size.height
         let bottomOfScreenY = camera!.position.y - (size.height / 2)
-        currentScore.position.y = bottomOfScreenY + screenHeight - 10
+        currentScore.position.y = bottomOfScreenY + screenHeight - 20
         currentScore.text = String(format: "%d", GameState.sharedInstance.score)
         if GameState.sharedInstance.score > GameState.sharedInstance.highScore {
             currentScore.run(SKAction.scale(to: 1.5, duration: 0.25))

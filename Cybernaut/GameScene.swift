@@ -818,23 +818,51 @@ class GameScene: SKScene, SKPhysicsContactDelegate, StackViewDelegate {
     }
     
     func updateQuestion() {
-        questionNumber = Int(arc4random_uniform(UInt32(allQuestions.list.count)))
-        let prompt = gameMenuView.subviews[1] as! UILabel
-        prompt.text = "Q) " + allQuestions.list[questionNumber].question + "?"
-        let optionA = gameMenuView.subviews[2] as! UILabel
-        optionA.text = "1) " + allQuestions.list[questionNumber].optionA
-        let optionB = gameMenuView.subviews[3] as! UILabel
-        optionB.text = "2) " + allQuestions.list[questionNumber].optionB
-        let optionC = gameMenuView.subviews[4] as! UILabel
-        optionC.text = "3) " + allQuestions.list[questionNumber].optionC
-        let optionD = gameMenuView.subviews[5] as! UILabel
-        optionD.text = "4) " + allQuestions.list[questionNumber].optionD
-        selectedAnswer = allQuestions.list[questionNumber].correctAnswer
+        var score = 0
+        /* Parse text in the currentScore */
+        if let text = currentScore.text {
+            score = Int(text)!
+        }
         
-        if questionAnswered < allQuestions.list.count {
+        var availableQuestions: [Question]
+        if (score < 200000)
+        {
+            availableQuestions = allQuestions.list.filter { (question: Question) -> Bool in
+                return !question.is_hard
+            }
+        } else {
+            availableQuestions = allQuestions.list.filter { (question: Question) -> Bool in
+                return question.is_hard
+            }
+        }
+        
+        if availableQuestions.isEmpty {
+            print("Error: No available questions")
+        } else {
+            let questionNumber = Int(arc4random_uniform(UInt32(availableQuestions.count)))
+            let selectedQuestion = availableQuestions[questionNumber]
+            
+            let prompt = gameMenuView.subviews[1] as! UILabel
+            prompt.text = "" + selectedQuestion.question
+            
+            let optionA = gameMenuView.subviews[2] as! UILabel
+            optionA.text = "" + selectedQuestion.optionA
+            
+            let optionB = gameMenuView.subviews[3] as! UILabel
+            optionB.text = "" + selectedQuestion.optionB
+            
+            let optionC = gameMenuView.subviews[4] as! UILabel
+            optionC.text = "" + selectedQuestion.optionC
+            
+            let optionD = gameMenuView.subviews[5] as! UILabel
+            optionD.text = "" + selectedQuestion.optionD
+            
+            selectedAnswer = selectedQuestion.correctAnswer
+        }
+        if questionAnswered < availableQuestions.count {
             // Prevents repeating questions.
             while previousNumber == questionNumber {
-                questionNumber =  Int(arc4random_uniform(UInt32(allQuestions.list.count)))
+                questionNumber =  Int(arc4random_uniform(UInt32(availableQuestions.count)))
             }
             previousNumber = questionNumber
             questionAnswered += 1

@@ -474,9 +474,14 @@ class GameScene: SKScene, SKPhysicsContactDelegate, StackViewDelegate {
     }
 
     func setTFLabel() { // Put argument for the string from the question
+        guard let view = self.view else {
+            return
+        }
+        
         TFLabel = hudNode.childNode(withName: "TFLabel") as! SKLabelNode
         TFLabel.isHidden = false
         TFLabel.numberOfLines = 0
+        TFLabel.preferredMaxLayoutWidth = view.bounds.size.width
         TFLabel.text = allTFQuestions.list[TFQuestionNumber].question
         TFLabel.run(
             SKAction.sequence([

@@ -876,7 +876,17 @@ class GameScene: SKScene, SKPhysicsContactDelegate, StackViewDelegate {
             optionD.text = "" + selectedQuestion.optionD
             
             selectedAnswer = selectedQuestion.correctAnswer
-            GameState.sharedInstance.correctAnswer = selectedQuestion.correctAnswer
+            
+            if selectedAnswer == 0 {
+                GameState.sharedInstance.correctAnswer = selectedQuestion.optionA
+            } else if selectedAnswer == 1 {
+                GameState.sharedInstance.correctAnswer = selectedQuestion.optionB
+            } else if selectedAnswer == 2 {
+                GameState.sharedInstance.correctAnswer = selectedQuestion.optionC
+            } else if selectedAnswer == 3 {
+                GameState.sharedInstance.correctAnswer = selectedQuestion.optionD
+            }
+            
         }
         if questionAnswered < availableQuestions.count {
             // Prevents repeating questions.

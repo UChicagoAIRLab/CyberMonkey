@@ -24,7 +24,11 @@ class EndGameScene: SKScene {
         lblCorrectAnswer.fontColor = SKColor.yellow
         lblCorrectAnswer.position = CGPoint(x: self.size.width / 2, y: self.size.height / 2 + 300)
         lblCorrectAnswer.horizontalAlignmentMode = SKLabelHorizontalAlignmentMode.center
-        lblCorrectAnswer.text = "The correct answer is: "
+        lblCorrectAnswer.numberOfLines = 0 // Allow multiple lines
+        lblCorrectAnswer.preferredMaxLayoutWidth = self.size.width * 5/6
+        print(GameState.sharedInstance.correctAnswer)
+        lblCorrectAnswer.text = String(format: "The correct answer is: \n %@", GameState.sharedInstance.correctAnswer)
+        
         addChild(lblCorrectAnswer)
     
         

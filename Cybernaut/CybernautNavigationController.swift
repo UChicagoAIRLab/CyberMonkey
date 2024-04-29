@@ -29,6 +29,12 @@ class CybernautNavigationController: UINavigationController {
         GameKitHelper.sharedInstance.authenticateLocalPlayer()
     }
     
+    var forceLandscape: Bool = false
+
+    override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
+               forceLandscape ? .landscape : .portrait
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

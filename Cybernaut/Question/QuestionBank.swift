@@ -14,21 +14,21 @@ class QuestionBank {
     init() {
 
         /* Easy Social Media Questions */
-        list.append(Question(questionText: "What should you do if someone you don't know asks for your personal information online?", choiceA: "Share it with them because they asked nicely", choiceB: "Ignore the request and tell a trusted adult", choiceC: "Tell them to ask again later", choiceD: "Ask them for their information first", correctAnswerText: 1, is_hardBool: false))
+        list.append(Question(questionText: "What should you do if someone you don't know asks for your personal information online?", choiceA: "Share it with them because they asked nicely", choiceB: "Ignore the request and tell a trusted grown up", choiceC: "Tell them to ask again later", choiceD: "Ask them for their information first", correctAnswerText: 1, is_hardBool: false))
 
         list.append(Question(questionText: "How can you protect your online privacy?", choiceA: "Share your password with friends", choiceB: "Keep personal information private", choiceC: "Post everything you do online", choiceD: "Accept friend requests from everyone", correctAnswerText: 1, is_hardBool: false))
 
         list.append(Question(questionText: "What should you do if you see someone being bullied on social media?", choiceA: "Join in and make fun of them", choiceB: "Report the bullying using the Report button", choiceC: "Ignore it and hope it stops", choiceD: "Share the bullying content with friends", correctAnswerText: 1, is_hardBool: false))
 
-        list.append(Question(questionText: "What should you do if someone you don't know adds you as a friend on social media?", choiceA: "Accept the request immediately", choiceB: "Decline the request and tell a trusted adult", choiceC: "Ask them why they want to be friends", choiceD: "Share personal information with them", correctAnswerText: 1, is_hardBool: false))
+        list.append(Question(questionText: "What should you do if someone you don't know adds you as a friend on social media?", choiceA: "Accept the request immediately", choiceB: "Decline the request and tell a trusted grown up", choiceC: "Ask them why they want to be friends", choiceD: "Share personal information with them", correctAnswerText: 1, is_hardBool: false))
 
         list.append(Question(questionText: "What should you do before you post something on social media?", choiceA: "Think about how it would make you feel if someone said or did the same thing to you.", choiceB: "Ask yourself if you would be okay with your parents seeing it.", choiceC: "Just post it without thinking about it.", choiceD: "Ask your followers if it's okay to post it.", correctAnswerText: 0, is_hardBool: false))
 
         list.append(Question(questionText: "What kind of information should you avoid sharing publicly on social media?", choiceA: "Your favorite food", choiceB: "Your home address", choiceC: "Your favorite color", choiceD: "Your favorite book", correctAnswerText: 1, is_hardBool: false))
 
-        list.append(Question(questionText: "What should you do if someone sends you a mean message on social media?", choiceA: "Send an even meaner message back", choiceB: "Ignore it and hope it stops", choiceC: "Report the message and tell a trusted adult", choiceD: "Share the message with your friends for support", correctAnswerText: 2, is_hardBool: false))
+        list.append(Question(questionText: "What should you do if someone sends you a mean message on social media?", choiceA: "Send an even meaner message back", choiceB: "Ignore it and hope it stops", choiceC: "Report the message and tell a trusted grown up", choiceD: "Share the message with your friends for support", correctAnswerText: 2, is_hardBool: false))
 
-        list.append(Question(questionText: "What should you do if you accidentally share something online that you didn't mean to?", choiceA: "Throw away your computer", choiceB: "Pretend it didn't happen and ignore it", choiceC: "Quickly delete the post and tell a trusted adult", choiceD: "Share even more to distract from the mistake", correctAnswerText: 2, is_hardBool: false))
+        list.append(Question(questionText: "What should you do if you accidentally share something online that you didn't mean to?", choiceA: "Throw away your computer", choiceB: "Pretend it didn't happen and ignore it", choiceC: "Delete the post and tell a trusted grown up", choiceD: "Share even more to distract from the mistake", correctAnswerText: 2, is_hardBool: false))
 
         list.append(Question(questionText: "Why is it important to keep your passwords a secret?", choiceA: "So you can share them with your friends", choiceB: "To keep your accounts safe from hackers", choiceC: "Because everyone else knows them already", choiceD: "So you don't forget them", correctAnswerText: 1, is_hardBool: false))
 
@@ -37,7 +37,7 @@ class QuestionBank {
         /* Hard Social Media Questions */
         list.append(Question(questionText: "Why is it important to ask permission before tagging someone in a photo?", choiceA: "Because it's more fun to surprise them", choiceB: "To respect their privacy and feelings", choiceC: "So they feel famous and popular", choiceD: "It's not important; just tag them whenever you want", correctAnswerText: 1, is_hardBool: true))
 
-        list.append(Question(questionText: "What should you do if you think your social media account has been hacked?", choiceA: "Do nothing and hope it gets better on its own", choiceB: "Post about it on your timeline to get help", choiceC: "Change your password immediately and tell a trusted adult", choiceD: "Delete your account and make a new one with the same name", correctAnswerText: 2, is_hardBool: true))
+        list.append(Question(questionText: "What should you do if you think your social media account has been hacked?", choiceA: "Do nothing and hope it gets better on its own", choiceB: "Post about it on your timeline to get help", choiceC: "Change your password immediately and tell a trusted grown up", choiceD: "Delete your account and make a new one with the same name", correctAnswerText: 2, is_hardBool: true))
 
         list.append(Question(questionText: "What are your social media privacy settings?", choiceA: "Tools to help you get more followers", choiceB: "Controls to help you manage who sees your posts", choiceC: "A timer to stop you from spending too much time online", choiceD: "A list of all your friends on social media", correctAnswerText: 1, is_hardBool: true))
 
@@ -58,7 +58,7 @@ class QuestionBank {
 
         list.append(Question(questionText: "Which of the following is considered personal information?", choiceA: "Your birthdate", choiceB: "The name of your favorite restaurant", choiceC: "The title of the last book you read", choiceD: "The color of your backpack", correctAnswerText: 0, is_hardBool: false))
 
-        list.append(Question(questionText: "Why should you be careful about sharing your location online?", choiceA: "Because it can help strangers find out where you are", choiceB: "Because it can make you popular", choiceC: "Because it makes it easier to meet new friends", choiceD: "Because everyone else is doing it", correctAnswerText: 1, is_hardBool: false))
+        list.append(Question(questionText: "Why should you be careful about sharing your location online?", choiceA: "Because it can help strangers find out where you are", choiceB: "Because it can make you popular", choiceC: "Because it makes it easier to meet new friends", choiceD: "Because everyone else is doing it", correctAnswerText: 0, is_hardBool: false))
 
         list.append(Question(questionText: "How can you stop sharing your location on social media?", choiceA: "Go to your account settings and turn off the location option", choiceB: "Tell your friends where you are", choiceC: "Keep posting updates about your location", choiceD: "Share your location with everyone", correctAnswerText: 0, is_hardBool: false))
 
@@ -104,7 +104,7 @@ class QuestionBank {
 
         list.append(Question(questionText: "What is cyberbullying?", choiceA: "Bullying that takes place online or through text messages.", choiceB: "A type of malware that can steal your personal information.", choiceC: "A type of online advertising.", choiceD: "A video game where the final boss is a bully.", correctAnswerText: 0, is_hardBool: true))
 
-        list.append(Question(questionText: "What is a good way to protect yourself from cyberbullying?", choiceA: "Report bullies and tell a trusted adult.", choiceB: "Write mean comments to cyberbullies.", choiceC: "Never go on the Internet, ever.", choiceD: "Give cyberbullies your personal information.", correctAnswerText: 0, is_hardBool: true))
+        list.append(Question(questionText: "What is a good way to protect yourself from cyberbullying?", choiceA: "Report bullies and tell a trusted grown up.", choiceB: "Write mean comments to cyberbullies.", choiceC: "Never go on the Internet, ever.", choiceD: "Give cyberbullies your personal information.", correctAnswerText: 0, is_hardBool: true))
 
         list.append(Question(questionText: "What is one of the best ways to be a good digital citizen?", choiceA: "Be respectful to others online.", choiceB: "Post the first thing that comes to your mind.", choiceC: "Make friends with anyone on social media to increase followers.", choiceD: "Always create long passwords for your accounts.", correctAnswerText: 0, is_hardBool: true))
 
@@ -141,11 +141,11 @@ class QuestionBank {
 
         list.append(Question(questionText: "When you join a public video game server, what is the most important thing to remember?", choiceA: "To win the game at all costs", choiceB: "To be respectful of other players", choiceC: "To talk to everyone you meet", choiceD: "To cheat and use hacks", correctAnswerText: 1, is_hardBool: false))
 
-        list.append(Question(questionText: "What should you do if someone is being mean to you on an online server?", choiceA: "Yell at them and tell them to stop", choiceB: "Ignore them and don't let them get to you", choiceC: "Tell a trusted adult or report the behavior to the server moderators", choiceD: "Try to beat them at the game to show them who's boss", correctAnswerText: 2, is_hardBool: false))
+        list.append(Question(questionText: "What should you do if someone is being mean to you on an online server?", choiceA: "Yell at them and tell them to stop", choiceB: "Ignore them and don't let them get to you", choiceC: "Tell a trusted grown up or report the behavior to the server moderators", choiceD: "Try to beat them at the game to show them who's boss", correctAnswerText: 2, is_hardBool: false))
 
         list.append(Question(questionText: "What should you do if you see someone cheating or using hacks on an online server?", choiceA: "Join them and cheat too", choiceB: "Ignore it and hope they get banned", choiceC: "Report the behavior to the server moderators", choiceD: "Tell them how unfair it is and try to get them kicked from the game.", correctAnswerText: 2, is_hardBool: false))
 
-        list.append(Question(questionText: "What should you do if someone asks you to meet them in person after playing a video game together?", choiceA: "Agree to meet them without telling anyone.", choiceB: "Ask your parents or a trusted adult for permission before meeting them.", choiceC: "Tell them you're not comfortable meeting them and tell a trusted adult.", choiceD: "Tell them you're not sure and will think about it.", correctAnswerText: 2, is_hardBool: false))
+        list.append(Question(questionText: "What should you do if someone asks you to meet them in person after playing a video game together?", choiceA: "Agree to meet them without telling anyone.", choiceB: "Ask your parents or a trusted grown up for permission before meeting them.", choiceC: "Tell them you're not comfortable meeting them and tell a trusted grown up.", choiceD: "Tell them you're not sure and will think about it.", correctAnswerText: 2, is_hardBool: false))
 
         /* Easy Youtube Questions */
         
@@ -162,11 +162,11 @@ class QuestionBank {
 
         list.append(Question(questionText: "Should you open attachments that people send you in emails while doing homework online?", choiceA: "Yes, it's okay to open any attachment that someone sends you.", choiceB: "No, it's not a good idea to open attachments from people you don't know.", choiceC: "Only open attachments from people you think are your age.", choiceD: "It's okay to open attachments that seem interesting or fun.", correctAnswerText: 1, is_hardBool: false))
 
-        list.append(Question(questionText: "What should you do if you see something strange or inappropriate on a website while doing homework online?", choiceA: "Tell your teacher or a trusted adult about it immediately.", choiceB: "Keep it to yourself and pretend you didn't see anything.", choiceC: "Tell your friends about it and have a laugh about it.", choiceD: "Ignore it and hope it goes away.", correctAnswerText: 0, is_hardBool: false))
+        list.append(Question(questionText: "What should you do if you see something strange or inappropriate on a website while doing homework online?", choiceA: "Tell your teacher or a trusted grown up about it immediately.", choiceB: "Keep it to yourself and pretend you didn't see anything.", choiceC: "Tell your friends about it and have a laugh about it.", choiceD: "Ignore it and hope it goes away.", correctAnswerText: 0, is_hardBool: false))
 
         list.append(Question(questionText: "Should you trust all of the information you find on the internet while doing homework?", choiceA: "Yes, you can trust all of the information you find online, even if it comes from unknown sources.", choiceB: "You should always double-check the information you find online with reliable sources like books or encyclopedias.", choiceC: "It's okay to rely on information from websites that have a lot of comments and reviews.", choiceD: "You should only trust information from websites that have a lot of links to other websites.", correctAnswerText: 1, is_hardBool: false))
 
-        list.append(Question(questionText: "What should you do if you are unsure about a website you are using for homework?", choiceA: "Ask your teacher or a trusted adult for help.", choiceB: "Continue using the website even if you have doubts about its accuracy.", choiceC: "Try to find a website with more pictures and less text.", choiceD: "Move on to a different website without further investigation.", correctAnswerText: 0, is_hardBool: false))
+        list.append(Question(questionText: "What should you do if you are unsure about a website you are using for homework?", choiceA: "Ask your teacher or a trusted grown up for help.", choiceB: "Continue using the website even if you have doubts about its accuracy.", choiceC: "Try to find a website with more pictures and less text.", choiceD: "Move on to a different website without further investigation.", correctAnswerText: 0, is_hardBool: false))
 
         list.append(Question(questionText: "What is the best way to make sure you are using reliable sources for your homework?", choiceA: "Use a variety of sources, including websites, books, and encyclopedias. Try to double-check what you’ve learned with sources that have been recommended by your teacher.", choiceB: "Only use sources that have been recommended by your teacher.", choiceC: "Choose sources that have a lot of advertisements and pop-ups.", choiceD: "Rely on sources that have been shared by your friends on social media.", correctAnswerText: 0, is_hardBool: false))
 

@@ -37,8 +37,6 @@ class QuestionBank {
         /* Hard Social Media Questions */
         list.append(Question(questionText: "Why is it important to ask permission before tagging someone in a photo?", choiceA: "Because it's more fun to surprise them", choiceB: "To respect their privacy and feelings", choiceC: "So they feel famous and popular", choiceD: "It's not important; just tag them whenever you want", correctAnswerText: 1, is_hardBool: true))
 
-        list.append(Question(questionText: "Why is it important to have two-factor authentication on your social media accounts?", choiceA: "To make logging in easier when you forget your password", choiceB: "To protect your account from hackers even if they know your password", choiceC: "Because you get to post more pictures", choiceD: "To report bullying on social media", correctAnswerText: 1, is_hardBool: true))
-
         list.append(Question(questionText: "What should you do if you think your social media account has been hacked?", choiceA: "Do nothing and hope it gets better on its own", choiceB: "Post about it on your timeline to get help", choiceC: "Change your password immediately and tell a trusted adult", choiceD: "Delete your account and make a new one with the same name", correctAnswerText: 2, is_hardBool: true))
 
         list.append(Question(questionText: "What are your social media privacy settings?", choiceA: "Tools to help you get more followers", choiceB: "Controls to help you manage who sees your posts", choiceC: "A timer to stop you from spending too much time online", choiceD: "A list of all your friends on social media", correctAnswerText: 1, is_hardBool: true))
@@ -46,8 +44,6 @@ class QuestionBank {
         list.append(Question(questionText: "Someone you don’t know sent you a message, they want to gift you an Amazon gift card. You:", choiceA: "Always trust the people giving you big prizes for free", choiceB: "Send this person a friend request", choiceC: "Share this offer with all your friends to increase your chances of winning", choiceD: "Ignore the message and block the user", correctAnswerText: 3, is_hardBool: true))
 
         list.append(Question(questionText: "What steps can you take to protect your privacy when using location services on social media?", choiceA: "Share your location with everyone to let them know where you are", choiceB: "Only use location services when absolutely necessary", choiceC: "Share your location with strangers to make new friends", choiceD: "Constantly update your location for fun", correctAnswerText: 1, is_hardBool: true))
-
-        list.append(Question(questionText: "Mr. Beast just sent you a follow request. How do you know that Mr. Beast actually owns the account?", choiceA: "Check for a blue check mark next to his name", choiceB: "Share his posts with your friends to ask them", choiceC: "Message him to prove that he is Mr. Beast", choiceD: "Put rude comments on posts on his account", correctAnswerText: 0, is_hardBool: true))
 
         list.append(Question(questionText: "How can you protect yourself from identity theft on social media?", choiceA: "By sharing your personal information with everyone", choiceB: "By always updating your profile with new information", choiceC: "By using strong, unique passwords and only talking to people you know", choiceD: "By talking to everyone you can, even if you don’t know them", correctAnswerText: 2, is_hardBool: true))
 
@@ -70,7 +66,7 @@ class QuestionBank {
 
         list.append(Question(questionText: "When might you want to turn on location services for some time?", choiceA: "When you're lost and need directions", choiceB: "When you want to keep your location private", choiceC: "When you want to share your location with friends all the time", choiceD: "When you're not using your phone", correctAnswerText: 0, is_hardBool: false))
 
-        list.append(Question(questionText: "What should you do if a stranger asks for your location online?", choiceA: "Ignore the request and tell a trusted adult", choiceB: "Immediately share your location to be helpful", choiceC: "Ask them why they need your location", choiceD: "Share your location and ask for theirs in return", correctAnswerText: 0, is_hardBool: false))
+        list.append(Question(questionText: "What should you do if a stranger asks for your location online?", choiceA: "Ignore the request and tell a trusted grown up", choiceB: "Immediately share your location to be helpful", choiceC: "Ask them why they need your location", choiceD: "Share your location and ask for theirs in return", correctAnswerText: 0, is_hardBool: false))
 
         /* Hard User Privacy Questions */
         list.append(Question(questionText: "Why is it important to review and update your privacy settings?", choiceA: "To ensure your information is only seen by people you trust", choiceB: "To increase your followers on social media", choiceC: "To make your profile more popular", choiceD: "To share more personal details with strangers online", correctAnswerText: 0, is_hardBool: true))
@@ -79,8 +75,8 @@ class QuestionBank {
 
         list.append(Question(questionText: "How can you recognize a secure website when making online purchases?", choiceA: "Look for a padlock symbol in the browser's address bar", choiceB: "Click on every link and advertisement on the website", choiceC: "Try to buy the things that you like", choiceD: "Ignore any security warnings that pop up", correctAnswerText: 0, is_hardBool: true))
 
-        list.append(Question(questionText: "What is the purpose of using a VPN on the internet?", choiceA: "To increase the speed of your internet connection", choiceB: "To write send funny emails to your friends", choiceC: "To protect your privacy on the internet", choiceD: "To share your personal information with hackers", correctAnswerText: 2, is_hardBool: true))
-
+        list.append(Question(questionText: "What is one method to protect your personal information online?", choiceA: "Sharing your passwords with friends", choiceB: "Writing your passwords on sticky notes and leaving them on your desk", choiceC: "Creating passwords with many letters, numbers, and special characters", choiceD: "Creating passwords based on your name or birthday", correctAnswerText: 2, is_hardBool: true))
+        
         list.append(Question(questionText: "Why should you be careful about clicking on links from unknown senders?", choiceA: "Because it might lead to downloading a virus on your device", choiceB: "Because it's a fun way to discover new websites", choiceC: "Because it helps increase your online popularity", choiceD: "Because everyone else does it too", correctAnswerText: 0, is_hardBool: true))
 
         list.append(Question(questionText: "What is a virus?", choiceA: "A type of code that protects your computer from hackers", choiceB: "A tiny animal that makes you sick", choiceC: "A type of online game you can play with friends", choiceD: "A malicious program that can steal your information", correctAnswerText: 3, is_hardBool: true))
@@ -115,7 +111,7 @@ class QuestionBank {
         /* Hard Phishing Questions */
         list.append(Question(questionText: "What is phishing?", choiceA: "A type of online scam that obtains personal information, such as credit card numbers, by posing as legitimate people or groups of people.", choiceB: "A type of software that is used to protect computers from viruses and malware.", choiceC: "A type of email that is used to advertise products or services.", choiceD: "A type of fishing practiced in the sea.", correctAnswerText: 0, is_hardBool: true))
 
-        list.append(Question(questionText: "What is a common sign of a phishing email?", choiceA: "The email is from a sender you recognize and know in real life.", choiceB: "The email contains grammatical errors or typos.", choiceC: "The email asks for personal information, such as passwords or credit card numbers.", choiceD: "The email talks about the weather in Antarctica.", correctAnswerText: 2, is_hardBool: true))
+        list.append(Question(questionText: "What is a common sign of a phishing email?", choiceA: "The email is from a sender you recognize and know in real life.", choiceB: "The email contains multiple senders instead of one.", choiceC: "The email asks for personal information, such as passwords or credit card numbers.", choiceD: "The email talks about the weather in Antarctica.", correctAnswerText: 2, is_hardBool: true))
 
         list.append(Question(questionText: "What should you do if you receive a phishing email?", choiceA: "Click on any links in the email.", choiceB: "Open any attachments in the email.", choiceC: "Delete the email without opening it.", choiceD: "Forward the email to all your contacts.", correctAnswerText: 2, is_hardBool: true))
 
@@ -126,8 +122,8 @@ class QuestionBank {
         list.append(Question(questionText: "What should you do if you land on a phishing website?", choiceA: "Enter your personal information into any fields on the website.", choiceB: "Close your browser immediately.", choiceC: "Report the website to the authorities.", choiceD: "Click on all the links on the website.", correctAnswerText: 1, is_hardBool: true))
 
         list.append(Question(questionText: "What is smishing?", choiceA: "A type of phishing that is carried out over text message.", choiceB: "A type of phishing that is carried out over email.", choiceC: "A type of phishing that is carried out over social media.", choiceD: "A type of fishing done in a small pond.", correctAnswerText: 0, is_hardBool: true))
-
-        list.append(Question(questionText: "What is one of the best ways to protect yourself from phishing attacks?", choiceA: "Be careful about what links you click on and what attachments you open.", choiceB: "Use strong passwords and enable two-factor authentication whenever possible.", choiceC: "Buy the latest model of the computer you’re using.", choiceD: "Share your personal information with anyone who asks for it.", correctAnswerText: 0, is_hardBool: true))
+        
+        list.append(Question(questionText: "What is one of the best ways to protect yourself from phishing attacks?", choiceA: "Be careful about what links you click on and what attachments you open.", choiceB: "Use strong passwords whenever possible.", choiceC: "Buy the latest model of the computer you’re using.", choiceD: "Share your personal information with anyone who asks for it.", correctAnswerText: 0, is_hardBool: true))
 
         list.append(Question(questionText: "You receive an email from someone who appears to be your friend. They tell you that they are in trouble and need money urgently. What should you do?", choiceA: "Reply to the email and offer to send them money.", choiceB: "Delete the email and tell your friend and parents about it.", choiceC: "Ask your parents if it's okay to send your friend money.", choiceD: "Ignore the email and hope it goes away.", correctAnswerText: 1, is_hardBool: true))
 

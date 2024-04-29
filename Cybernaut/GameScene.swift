@@ -424,32 +424,49 @@ class GameScene: SKScene, SKPhysicsContactDelegate, StackViewDelegate {
     }
     
     func updateTFQuestion(_ typePrivacy: Bool) {
-        TFQuestionNumber = Int(arc4random_uniform(UInt32(allTFQuestions.list.count)))
-        if typePrivacy == true {
-            while allTFQuestions.list[TFQuestionNumber].type != "privacy" {
-                TFQuestionNumber = Int(arc4random_uniform(UInt32(allTFQuestions.list.count)))
+        var score = 0
+        /* Parse text in the currentScore */
+        if let text = currentScore.text {
+            score = Int(text)!
+        }
+                
+        var availableQuestions: [TFQuestion]
+        if (score < 200000)
+        {
+            availableQuestions = allTFQuestions.list.filter { (question: TFQuestion) -> Bool in
+                return !question.is_hard
             }
-                TFLabel.text = allTFQuestions.list[TFQuestionNumber].question
-                TFSelectedAnswer = allTFQuestions.list[TFQuestionNumber].correctAnswer
+            } else {
+                availableQuestions = allTFQuestions.list.filter { (question: TFQuestion) -> Bool in
+                return question.is_hard
+            }
+        }
+        TFQuestionNumber = Int(arc4random_uniform(UInt32(availableQuestions.count)))
+        if typePrivacy == true {
+            while availableQuestions[TFQuestionNumber].type != "privacy" {
+                TFQuestionNumber = Int(arc4random_uniform(UInt32(availableQuestions.count)))
+            }
+                TFLabel.text = availableQuestions[TFQuestionNumber].question
+                TFSelectedAnswer = availableQuestions[TFQuestionNumber].correctAnswer
                 setTFLabel()
                 setTFPowerups()
                 
         }
         
         else {
-            while allTFQuestions.list[TFQuestionNumber].type == "privacy" {
+            while availableQuestions[TFQuestionNumber].type == "privacy" {
                 TFQuestionNumber = Int(arc4random_uniform(UInt32(allTFQuestions.list.count)))
             }
-            TFLabel.text = allTFQuestions.list[TFQuestionNumber].question
-            TFSelectedAnswer = allTFQuestions.list[TFQuestionNumber].correctAnswer
+            TFLabel.text = availableQuestions[TFQuestionNumber].question
+            TFSelectedAnswer = availableQuestions[TFQuestionNumber].correctAnswer
             setTFLabel()
             setTFPowerups()
         }
         
-        if TFQuestionAnswered < allTFQuestions.list.count {
+        if TFQuestionAnswered < availableQuestions.count {
             // Prevents (consecutive) repeating questions.
             while TFPreviousNumber == TFQuestionNumber {
-                TFQuestionNumber = Int(arc4random_uniform(UInt32(allTFQuestions.list.count)))
+                TFQuestionNumber = Int(arc4random_uniform(UInt32(availableQuestions.count)))
             }
             TFPreviousNumber = TFQuestionNumber
             TFQuestionAnswered += 1

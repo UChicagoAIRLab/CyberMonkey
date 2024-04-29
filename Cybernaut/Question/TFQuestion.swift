@@ -15,13 +15,15 @@ class TFQuestion {
     let F: Int
     let type: String
     let correctAnswer: Int
+    let is_hard: Bool
     
-    init(questionText: String, theme: String, correctAnswerText: Int) {
+    init(questionText: String, theme: String, correctAnswerText: Int, is_hardness:Bool) {
         question = questionText
         T = 0
         F = 1
         type = theme
         correctAnswer = correctAnswerText
+        is_hard = is_hardness
     }
 }
 

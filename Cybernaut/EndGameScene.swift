@@ -13,7 +13,7 @@ class EndGameScene: SKScene {
         let lblGameOver = SKLabelNode(fontNamed: "PixelDigivolve")
         lblGameOver.fontSize = 200
         lblGameOver.fontColor = SKColor.white
-        lblGameOver.position = CGPoint(x: self.size.width / 2, y: self.size.height / 2 + 500)
+        lblGameOver.position = CGPoint(x: self.size.width / 2, y: self.size.height * 5/6)
         lblGameOver.horizontalAlignmentMode = SKLabelHorizontalAlignmentMode.center
         lblGameOver.text = "Game Over"
         addChild(lblGameOver)
@@ -22,7 +22,7 @@ class EndGameScene: SKScene {
         let lblCorrectAnswer = SKLabelNode(fontNamed: "PixelDigivolve")
         lblCorrectAnswer.fontSize = 60
         lblCorrectAnswer.fontColor = SKColor.yellow
-        lblCorrectAnswer.position = CGPoint(x: self.size.width / 2, y: self.size.height / 2 + 300)
+        lblCorrectAnswer.position = CGPoint(x: self.size.width / 2, y: self.size.height * 2/3)
         lblCorrectAnswer.horizontalAlignmentMode = SKLabelHorizontalAlignmentMode.center
         lblCorrectAnswer.numberOfLines = 0 // Allow multiple lines
         lblCorrectAnswer.preferredMaxLayoutWidth = self.size.width * 5/6
@@ -36,7 +36,7 @@ class EndGameScene: SKScene {
         let lblScore = SKLabelNode(fontNamed: "PixelDigivolve")
         lblScore.fontSize = 200
         lblScore.fontColor = SKColor.white
-        lblScore.position = CGPoint(x: self.size.width / 2, y: self.size.height/2 )
+        lblScore.position = CGPoint(x: self.size.width / 2, y: self.size.height/2 - 50)
         lblScore.horizontalAlignmentMode = SKLabelHorizontalAlignmentMode.center
         lblScore.text = String(format: "%d", GameState.sharedInstance.score)
         addChild(lblScore)

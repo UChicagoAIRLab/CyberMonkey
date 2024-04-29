@@ -58,7 +58,7 @@ class QuestionBank {
 
         list.append(Question(questionText: "Which of the following is considered personal information?", choiceA: "Your birthdate", choiceB: "The name of your favorite restaurant", choiceC: "The title of the last book you read", choiceD: "The color of your backpack", correctAnswerText: 0, is_hardBool: false))
 
-        list.append(Question(questionText: "Why should you be careful about sharing your location online?", choiceA: "Because it can help strangers find out where you are", choiceB: "Because it can make you popular", choiceC: "Because it makes it easier to meet new friends", choiceD: "Because everyone else is doing it", correctAnswerText: 1, is_hardBool: false))
+        list.append(Question(questionText: "Why should you be careful about sharing your location online?", choiceA: "Because it can help strangers find out where you are", choiceB: "Because it can make you popular", choiceC: "Because it makes it easier to meet new friends", choiceD: "Because everyone else is doing it", correctAnswerText: 0, is_hardBool: false))
 
         list.append(Question(questionText: "How can you stop sharing your location on social media?", choiceA: "Go to your account settings and turn off the location option", choiceB: "Tell your friends where you are", choiceC: "Keep posting updates about your location", choiceD: "Share your location with everyone", correctAnswerText: 0, is_hardBool: false))
 

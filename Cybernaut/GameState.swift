@@ -3,6 +3,7 @@ import SpriteKit
 class GameState {
     var score: Int
     var highScore: Int
+    var correctAnswer: String
     class var sharedInstance: GameState {
         struct Singleton {
             static let instance = GameState()
@@ -14,6 +15,7 @@ class GameState {
         // Init
         score = 0
         highScore = 0
+        correctAnswer = ""
         
         // Load game state
         highScore = UserDefaults.standard.integer(forKey: "highestScore")

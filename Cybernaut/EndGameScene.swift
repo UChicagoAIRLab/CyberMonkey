@@ -13,10 +13,20 @@ class EndGameScene: SKScene {
         let lblGameOver = SKLabelNode(fontNamed: "PixelDigivolve")
         lblGameOver.fontSize = 200
         lblGameOver.fontColor = SKColor.white
-        lblGameOver.position = CGPoint(x: self.size.width / 2, y: self.size.height / 2 + 300)
+        lblGameOver.position = CGPoint(x: self.size.width / 2, y: self.size.height / 2 + 500)
         lblGameOver.horizontalAlignmentMode = SKLabelHorizontalAlignmentMode.center
         lblGameOver.text = "Game Over"
         addChild(lblGameOver)
+        
+        
+        let lblCorrectAnswer = SKLabelNode(fontNamed: "PixelDigivolve")
+        lblCorrectAnswer.fontSize = 60
+        lblCorrectAnswer.fontColor = SKColor.yellow
+        lblCorrectAnswer.position = CGPoint(x: self.size.width / 2, y: self.size.height / 2 + 300)
+        lblCorrectAnswer.horizontalAlignmentMode = SKLabelHorizontalAlignmentMode.center
+        lblCorrectAnswer.text = "The correct answer is: "
+        addChild(lblCorrectAnswer)
+    
         
         // Score
         let lblScore = SKLabelNode(fontNamed: "PixelDigivolve")

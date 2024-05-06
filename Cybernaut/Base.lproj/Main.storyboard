@@ -60,12 +60,24 @@
                                     <action selector="play:" destination="9ac-Ph-7v6" eventType="touchUpInside" id="5Y7-FQ-zQw"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7DO-Ja-Wtf">
+                                <rect key="frame" x="334" y="812" width="167" height="218"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="7DO-Ja-Wtf" secondAttribute="height" multiplier="100:100" id="GEV-mD-glU"/>
+                                    <constraint firstAttribute="width" constant="200" id="rXG-WF-DV0"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="Instructions (1)"/>
+                                <connections>
+                                    <action selector="play:" destination="9ac-Ph-7v6" eventType="touchUpInside" id="Ctw-5u-0f4"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="q4m-Gr-KG5"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="uMB-HB-3Wj" firstAttribute="centerY" secondItem="Sf5-nJ-W82" secondAttribute="centerY" id="1Bx-tE-pUs"/>
                             <constraint firstItem="Gjg-hL-mZE" firstAttribute="centerY" secondItem="Sf5-nJ-W82" secondAttribute="centerY" constant="136" id="gky-D7-dJO"/>
+                            <constraint firstItem="7DO-Ja-Wtf" firstAttribute="width" secondItem="7DO-Ja-Wtf" secondAttribute="height" multiplier="100:100" id="ksH-GZ-XL9"/>
                             <constraint firstItem="Gjg-hL-mZE" firstAttribute="centerX" secondItem="Sf5-nJ-W82" secondAttribute="centerX" id="u6l-M7-8hS"/>
                             <constraint firstItem="uMB-HB-3Wj" firstAttribute="centerX" secondItem="Sf5-nJ-W82" secondAttribute="centerX" id="zd7-J9-gya"/>
                         </constraints>
@@ -74,7 +86,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dHJ-or-5MT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-683.7890625" y="28.550512445095166"/>
+            <point key="canvasLocation" x="-684.17266187050359" y="28.140703517587941"/>
         </scene>
         <!--Game View Controller-->
         <scene sceneID="S0N-8e-ygU">
@@ -93,6 +105,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Instructions (1)" width="166.5" height="166.5"/>
         <image name="play" width="341.5" height="341.5"/>
         <image name="spaceship_bg_2" width="360" height="640"/>
     </resources>

@@ -95,8 +95,9 @@ class GameMenuView: UIStackView {
         prompt.numberOfLines = 0
         prompt.layer.masksToBounds = true
         prompt.layer.cornerRadius = 10.0
+        prompt.heightAnchor.constraint(equalToConstant: 150).isActive = true // Adjust the constant value as needed
         self.addArrangedSubview(prompt)
-        for i in 1...4 {
+        for i in 1...3 {
             let label = UILabel()
             label.font = UIFont(name: "PixelDigivolve", size: 25)
             label.textColor = UIColor.white
@@ -107,6 +108,7 @@ class GameMenuView: UIStackView {
             label.numberOfLines = 0
             label.layer.masksToBounds = true
             label.layer.cornerRadius = 10.0
+            label.heightAnchor.constraint(equalToConstant: 100).isActive = true // Adjust the constant value as needed
             self.addArrangedSubview(label)
         }
         let quit = UILabel()

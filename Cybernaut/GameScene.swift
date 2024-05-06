@@ -455,7 +455,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate, StackViewDelegate {
         
         else {
             while availableQuestions[TFQuestionNumber].type == "privacy" {
-                TFQuestionNumber = Int(arc4random_uniform(UInt32(allTFQuestions.list.count)))
+                TFQuestionNumber = Int(arc4random_uniform(UInt32(availableQuestions.count)))
             }
             TFLabel.text = availableQuestions[TFQuestionNumber].question
             TFSelectedAnswer = availableQuestions[TFQuestionNumber].correctAnswer
@@ -624,7 +624,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate, StackViewDelegate {
         }
         let screenHeight = view.bounds.size.height
         let bottomOfScreenY = camera!.position.y - (size.height / 2)
-        currentScore.position.y = bottomOfScreenY + screenHeight - 25
+        currentScore.position.y = bottomOfScreenY + screenHeight - (screenHeight / 10)
         currentScore.text = String(format: "%d", GameState.sharedInstance.score)
         if GameState.sharedInstance.score > GameState.sharedInstance.highScore {
             currentScore.run(SKAction.scale(to: 1.5, duration: 0.25))
@@ -656,7 +656,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate, StackViewDelegate {
         // Set velocity based on core motion
         player.physicsBody?.velocity.dx = xAcceleration * 1000.0
         // Wrap player around edges of screen
-        /*
+        
         var playerPosition = convert(player.position, from: fgNode)
         let leftLimit = sceneCropAmount()/2 - player.size.width/2
         let rightLimit = size.width - sceneCropAmount()/2
@@ -671,7 +671,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate, StackViewDelegate {
                 leftLimit, y: 0.0), to: fgNode)
             player.position.x = playerPosition.x
         }
-         */
+        
         
         // Updates the score based on if the player goes higher
         if Int(player.position.y) > maxPlayerY! {

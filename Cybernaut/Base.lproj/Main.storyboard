@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="v1x-3b-1CN">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="v1x-3b-1CN">
     <device id="ipad11_0rounded" orientation="portrait" layout="fullscreen" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -37,12 +37,12 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uMB-HB-3Wj">
-                                <rect key="frame" x="309.5" y="568.5" width="215" height="57"/>
+                                <rect key="frame" x="271.5" y="560.5" width="291.5" height="73"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Cybernaut">
                                         <attributes>
-                                            <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            <font key="NSFont" metaFont="system" size="48"/>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" size="67" name="MarkerFelt-Thin"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
@@ -60,12 +60,24 @@
                                     <action selector="play:" destination="9ac-Ph-7v6" eventType="touchUpInside" id="5Y7-FQ-zQw"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7DO-Ja-Wtf">
+                                <rect key="frame" x="334" y="812" width="167" height="218"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="7DO-Ja-Wtf" secondAttribute="height" multiplier="100:100" id="GEV-mD-glU"/>
+                                    <constraint firstAttribute="width" constant="200" id="rXG-WF-DV0"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="Instructions (1)"/>
+                                <connections>
+                                    <action selector="play:" destination="9ac-Ph-7v6" eventType="touchUpInside" id="Ctw-5u-0f4"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="q4m-Gr-KG5"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="uMB-HB-3Wj" firstAttribute="centerY" secondItem="Sf5-nJ-W82" secondAttribute="centerY" id="1Bx-tE-pUs"/>
                             <constraint firstItem="Gjg-hL-mZE" firstAttribute="centerY" secondItem="Sf5-nJ-W82" secondAttribute="centerY" constant="136" id="gky-D7-dJO"/>
+                            <constraint firstItem="7DO-Ja-Wtf" firstAttribute="width" secondItem="7DO-Ja-Wtf" secondAttribute="height" multiplier="100:100" id="ksH-GZ-XL9"/>
                             <constraint firstItem="Gjg-hL-mZE" firstAttribute="centerX" secondItem="Sf5-nJ-W82" secondAttribute="centerX" id="u6l-M7-8hS"/>
                             <constraint firstItem="uMB-HB-3Wj" firstAttribute="centerX" secondItem="Sf5-nJ-W82" secondAttribute="centerX" id="zd7-J9-gya"/>
                         </constraints>
@@ -74,7 +86,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dHJ-or-5MT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-683.7890625" y="28.550512445095166"/>
+            <point key="canvasLocation" x="-684.17266187050359" y="28.140703517587941"/>
         </scene>
         <!--Game View Controller-->
         <scene sceneID="S0N-8e-ygU">
@@ -93,6 +105,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Instructions (1)" width="166.5" height="166.5"/>
         <image name="play" width="341.5" height="341.5"/>
         <image name="spaceship_bg_2" width="360" height="640"/>
     </resources>

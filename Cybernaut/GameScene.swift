@@ -877,8 +877,6 @@ class GameScene: SKScene, SKPhysicsContactDelegate, StackViewDelegate {
             let optionC = gameMenuView.subviews[4] as! UILabel
             optionC.text = "" + selectedQuestion.optionC
             
-            let optionD = gameMenuView.subviews[5] as! UILabel
-            optionD.text = "" + selectedQuestion.optionD
             
             selectedAnswer = selectedQuestion.correctAnswer
             
@@ -888,8 +886,6 @@ class GameScene: SKScene, SKPhysicsContactDelegate, StackViewDelegate {
                 GameState.sharedInstance.correctAnswer = selectedQuestion.optionB
             } else if selectedAnswer == 2 {
                 GameState.sharedInstance.correctAnswer = selectedQuestion.optionC
-            } else if selectedAnswer == 3 {
-                GameState.sharedInstance.correctAnswer = selectedQuestion.optionD
             }
             
         }

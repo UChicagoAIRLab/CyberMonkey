@@ -19,8 +19,17 @@ class HomeScreenViewController: UIViewController {
     }
     
     @IBAction func play(_ sender: UIButton) {
+      if sender.title(for: .normal) == "PlayButton" {
         let gameViewController = self.storyboard!.instantiateViewController(withIdentifier: "GameViewController") as! GameViewController
         self.present(gameViewController, animated: true)
+      }
+    }
+    
+    @IBAction func tutorial(_ sender: UIButton) {
+      if sender.title(for: .normal) == "HowToButton" {
+        let tutorialViewController = self.storyboard!.instantiateViewController(withIdentifier: "TutorialViewController") as! TutorialViewController
+        self.present(tutorialViewController, animated: true)
+      }
     }
     
     @IBAction func gameCenter(_ sender: UIButton) {

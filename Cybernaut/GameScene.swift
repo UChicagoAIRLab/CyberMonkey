@@ -794,11 +794,8 @@ class GameScene: SKScene, SKPhysicsContactDelegate, StackViewDelegate {
 
         let screenSize = UIScreen.main.bounds
         let scale = view.bounds.size.height / self.size.height
-       /*
-        let scale = view.bounds.size.height / self.size.height
         let scaledWidth = self.size.width * scale
         let scaledOverlap = scaledWidth - view.bounds.size.width
-        */
        let screenWidth = view.bounds.size.width
         let screenHeight = screenSize.height
        gameMenuView.frame = CGRect(x: 0, y: 100, width: screenWidth, height: screenHeight * 0.5)

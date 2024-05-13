@@ -5,6 +5,7 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -55,20 +56,27 @@
                                     <constraint firstAttribute="width" secondItem="Gjg-hL-mZE" secondAttribute="height" multiplier="100:100" id="9Ge-pf-eQY"/>
                                     <constraint firstAttribute="width" constant="200" id="jte-0i-WBH"/>
                                 </constraints>
-                                <state key="normal" title="Button" image="play"/>
+                                <state key="normal" title="PlayButton" image="play"/>
                                 <connections>
                                     <action selector="play:" destination="9ac-Ph-7v6" eventType="touchUpInside" id="5Y7-FQ-zQw"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7DO-Ja-Wtf">
-                                <rect key="frame" x="334" y="812" width="167" height="218"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7DO-Ja-Wtf">
+                                <rect key="frame" x="295" y="765" width="244" height="244"/>
                                 <constraints>
+                                    <constraint firstAttribute="height" constant="244" id="7bX-cH-wZW"/>
                                     <constraint firstAttribute="width" secondItem="7DO-Ja-Wtf" secondAttribute="height" multiplier="100:100" id="GEV-mD-glU"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="HeN-Sd-SIV"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="300" id="K3k-Zu-J9J"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="300" id="p78-hs-0O3"/>
                                     <constraint firstAttribute="width" constant="200" id="rXG-WF-DV0"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="300" id="uIS-7c-Tvc"/>
                                 </constraints>
-                                <state key="normal" title="Button" image="Instructions (1)"/>
+                                <state key="normal" title="HowToButton" image="Instructions (1)">
+                                    <color key="titleColor" red="0.1960784314" green="0.67843137249999996" blue="0.90196078430000004" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
-                                    <action selector="play:" destination="9ac-Ph-7v6" eventType="touchUpInside" id="Ctw-5u-0f4"/>
+                                    <action selector="tutorial:" destination="9ac-Ph-7v6" eventType="touchUpInside" id="z45-cS-b0R"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -78,7 +86,9 @@
                             <constraint firstItem="uMB-HB-3Wj" firstAttribute="centerY" secondItem="Sf5-nJ-W82" secondAttribute="centerY" id="1Bx-tE-pUs"/>
                             <constraint firstItem="Gjg-hL-mZE" firstAttribute="centerY" secondItem="Sf5-nJ-W82" secondAttribute="centerY" constant="136" id="gky-D7-dJO"/>
                             <constraint firstItem="7DO-Ja-Wtf" firstAttribute="width" secondItem="7DO-Ja-Wtf" secondAttribute="height" multiplier="100:100" id="ksH-GZ-XL9"/>
+                            <constraint firstItem="7DO-Ja-Wtf" firstAttribute="centerX" secondItem="Sf5-nJ-W82" secondAttribute="centerX" id="ohc-HD-50i"/>
                             <constraint firstItem="Gjg-hL-mZE" firstAttribute="centerX" secondItem="Sf5-nJ-W82" secondAttribute="centerX" id="u6l-M7-8hS"/>
+                            <constraint firstItem="7DO-Ja-Wtf" firstAttribute="centerY" secondItem="Sf5-nJ-W82" secondAttribute="centerY" constant="290" id="xU7-UR-wDN"/>
                             <constraint firstItem="uMB-HB-3Wj" firstAttribute="centerX" secondItem="Sf5-nJ-W82" secondAttribute="centerX" id="zd7-J9-gya"/>
                         </constraints>
                     </view>
@@ -103,10 +113,28 @@
             </objects>
             <point key="canvasLocation" x="146" y="42"/>
         </scene>
+        <!--Tutorial View Controller-->
+        <scene sceneID="tdS-r9-kkK">
+            <objects>
+                <viewController storyboardIdentifier="TutorialViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="npE-r8-RVC" customClass="TutorialViewController" customModule="Cybernaut" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9gE-2z-bxD" customClass="SKView">
+                        <rect key="frame" x="0.0" y="0.0" width="834" height="1194"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="HRY-XY-hNx"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YdB-1w-VAI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="145" y="719"/>
+        </scene>
     </scenes>
     <resources>
         <image name="Instructions (1)" width="166.5" height="166.5"/>
         <image name="play" width="341.5" height="341.5"/>
         <image name="spaceship_bg_2" width="360" height="640"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>

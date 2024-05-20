@@ -11,6 +11,7 @@ import Foundation
 import UIKit
 
 class HomeScreenViewController: UIViewController {
+    public var IsGamePlayModeHard = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,6 +22,9 @@ class HomeScreenViewController: UIViewController {
     @IBAction func play(_ sender: UIButton) {
       if sender.title(for: .normal) == "PlayButton" {
         let gameViewController = self.storyboard!.instantiateViewController(withIdentifier: "GameViewController") as! GameViewController
+          // Set the game mode property
+        gameViewController.isgameHard = IsGamePlayModeHard
+        print("gameViewController.isgameHard: ", gameViewController.isgameHard)
         self.present(gameViewController, animated: true)
       }
     }
@@ -35,4 +39,21 @@ class HomeScreenViewController: UIViewController {
     @IBAction func gameCenter(_ sender: UIButton) {
         GameKitHelper.sharedInstance.showGKGameCenterViewController(viewController: self)
     }
+    
+    @IBAction func easy_mode(_ sender: UIButton) {
+      if sender.title(for: .normal) == "EasyMode" {
+          IsGamePlayModeHard = false
+          print("Set IsGamePlayModeHard to", IsGamePlayModeHard)
+      }
+    }
+    
+    @IBAction func hard_mode(_ sender: UIButton) {
+      if sender.title(for: .normal) == "HardMode" {
+          IsGamePlayModeHard = true
+          print("Set IsGamePlayModeHard to", IsGamePlayModeHard)
+      }
+    }
+    
+    
+    
 }

@@ -139,6 +139,9 @@ class GameMenuView: UIStackView {
 
 class GameScene: SKScene, SKPhysicsContactDelegate, StackViewDelegate {
     
+    // game difficulty
+    var isgameHard: Bool = false // Default value is false
+    
     var gameMenuView = GameMenuView()
     private var label : SKLabelNode?
 
@@ -433,15 +436,16 @@ class GameScene: SKScene, SKPhysicsContactDelegate, StackViewDelegate {
         }
                 
         var availableQuestions: [TFQuestion]
-        if (score < 200000)
+        let viewController = HomeScreenViewController()
+        if (!isgameHard && score < 20000) // if easy mode selected
         {
+            print("easy mode selected")
             availableQuestions = allTFQuestions.list.filter { (question: TFQuestion) -> Bool in
                 return !question.is_hard
             }
-            } else {
-                availableQuestions = allTFQuestions.list.filter { (question: TFQuestion) -> Bool in
-                return question.is_hard
-            }
+        } else {
+            print("hard mode selected")
+            availableQuestions = allTFQuestions.list.filter { $0.is_hard }
         }
         TFQuestionNumber = Int(arc4random_uniform(UInt32(availableQuestions.count)))
         if typePrivacy == true {
@@ -840,6 +844,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate, StackViewDelegate {
     }
     
     func updateQuestion() {
+        let viewController = HomeScreenViewController()
         var score = 0
         /* Parse text in the currentScore */
         if let text = currentScore.text {
@@ -847,12 +852,14 @@ class GameScene: SKScene, SKPhysicsContactDelegate, StackViewDelegate {
         }
         
         var availableQuestions: [Question]
-        if (score < 200000)
+        if ((!isgameHard) && score < 20000) // if easy mode selected
         {
+            print("easy mode selected")
             availableQuestions = allQuestions.list.filter { (question: Question) -> Bool in
                 return !question.is_hard
             }
         } else {
+            print("hard mode selected")
             availableQuestions = allQuestions.list.filter { (question: Question) -> Bool in
                 return question.is_hard
             }

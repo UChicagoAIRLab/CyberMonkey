@@ -50,8 +50,8 @@
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gjg-hL-mZE">
-                                <rect key="frame" x="317" y="633" width="200" height="200"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gjg-hL-mZE">
+                                <rect key="frame" x="317" y="631" width="200" height="200"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="Gjg-hL-mZE" secondAttribute="height" multiplier="100:100" id="9Ge-pf-eQY"/>
                                     <constraint firstAttribute="width" constant="200" id="jte-0i-WBH"/>
@@ -61,13 +61,14 @@
                                     <action selector="play:" destination="9ac-Ph-7v6" eventType="touchUpInside" id="5Y7-FQ-zQw"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7DO-Ja-Wtf">
-                                <rect key="frame" x="295" y="765" width="244" height="244"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7DO-Ja-Wtf">
+                                <rect key="frame" x="329" y="770" width="244" height="244"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="244" id="7bX-cH-wZW"/>
                                     <constraint firstAttribute="width" secondItem="7DO-Ja-Wtf" secondAttribute="height" multiplier="100:100" id="GEV-mD-glU"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="HeN-Sd-SIV"/>
                                     <constraint firstAttribute="width" relation="lessThanOrEqual" constant="300" id="K3k-Zu-J9J"/>
+                                    <constraint firstAttribute="width" secondItem="7DO-Ja-Wtf" secondAttribute="height" multiplier="100:100" id="ksH-GZ-XL9"/>
                                     <constraint firstAttribute="width" relation="lessThanOrEqual" constant="300" id="p78-hs-0O3"/>
                                     <constraint firstAttribute="width" constant="200" id="rXG-WF-DV0"/>
                                     <constraint firstAttribute="width" relation="lessThanOrEqual" constant="300" id="uIS-7c-Tvc"/>
@@ -79,15 +80,66 @@
                                     <action selector="tutorial:" destination="9ac-Ph-7v6" eventType="touchUpInside" id="z45-cS-b0R"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nRj-6d-iA5">
+                                <rect key="frame" x="235" y="375" width="244" height="244"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="300" id="4Po-my-vO9"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="FPP-9h-HRg"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="300" id="FfU-FA-HzR"/>
+                                    <constraint firstAttribute="width" secondItem="nRj-6d-iA5" secondAttribute="height" multiplier="100:100" id="JPN-Fz-jCX"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="300" id="Pob-rV-AQz"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="150" id="gvW-sT-FcR"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="200" id="ju1-kY-W8j"/>
+                                    <constraint firstAttribute="width" constant="200" id="meM-pv-FUk"/>
+                                    <constraint firstAttribute="width" secondItem="nRj-6d-iA5" secondAttribute="height" multiplier="100:100" id="tOA-DG-82O"/>
+                                    <constraint firstAttribute="height" constant="244" id="zZ7-8Y-poC"/>
+                                </constraints>
+                                <state key="normal" title="EasyMode" image="easy_mode">
+                                    <color key="titleColor" red="0.1960784314" green="0.67843137249999996" blue="0.90196078430000004" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="easy_mode:" destination="9ac-Ph-7v6" eventType="touchUpInside" id="cYl-4E-VxH"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e0C-0S-BsS">
+                                <rect key="frame" x="405" y="375" width="244" height="244"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="1f9-AI-9bQ"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="300" id="3yw-IH-uiU"/>
+                                    <constraint firstAttribute="width" constant="200" id="9uP-KT-ABJ"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="300" id="P7d-FA-ruI"/>
+                                    <constraint firstAttribute="width" secondItem="e0C-0S-BsS" secondAttribute="height" multiplier="100:100" id="SEU-bb-76i"/>
+                                    <constraint firstAttribute="height" constant="244" id="UgS-UD-u08"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="150" id="XOo-WS-oRA"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="200" id="fdB-I8-AWN"/>
+                                    <constraint firstAttribute="width" secondItem="e0C-0S-BsS" secondAttribute="height" multiplier="100:100" id="hQS-sr-Cfl"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="300" id="ics-qs-9Gn"/>
+                                </constraints>
+                                <state key="normal" title="HardMode" image="hard_mode">
+                                    <color key="titleColor" red="0.1960784314" green="0.67843137249999996" blue="0.90196078430000004" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="hard_mode:" destination="9ac-Ph-7v6" eventType="touchUpInside" id="Zvo-0Q-4Rt"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="q4m-Gr-KG5"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="uMB-HB-3Wj" firstAttribute="centerY" secondItem="Sf5-nJ-W82" secondAttribute="centerY" id="1Bx-tE-pUs"/>
+                            <constraint firstItem="nRj-6d-iA5" firstAttribute="centerY" secondItem="Sf5-nJ-W82" secondAttribute="centerY" constant="-100" id="34b-An-Tkr"/>
+                            <constraint firstItem="nRj-6d-iA5" firstAttribute="width" secondItem="nRj-6d-iA5" secondAttribute="height" multiplier="100:100" id="6DF-yb-He0"/>
+                            <constraint firstItem="e0C-0S-BsS" firstAttribute="width" secondItem="e0C-0S-BsS" secondAttribute="height" multiplier="100:100" id="8Qf-sn-BXc"/>
+                            <constraint firstItem="e0C-0S-BsS" firstAttribute="width" secondItem="e0C-0S-BsS" secondAttribute="height" multiplier="100:100" id="XBM-5s-RD2"/>
+                            <constraint firstItem="e0C-0S-BsS" firstAttribute="width" secondItem="e0C-0S-BsS" secondAttribute="height" multiplier="100:100" id="ayF-Xr-M4l"/>
                             <constraint firstItem="Gjg-hL-mZE" firstAttribute="centerY" secondItem="Sf5-nJ-W82" secondAttribute="centerY" constant="136" id="gky-D7-dJO"/>
-                            <constraint firstItem="7DO-Ja-Wtf" firstAttribute="width" secondItem="7DO-Ja-Wtf" secondAttribute="height" multiplier="100:100" id="ksH-GZ-XL9"/>
+                            <constraint firstItem="nRj-6d-iA5" firstAttribute="width" secondItem="nRj-6d-iA5" secondAttribute="height" multiplier="100:100" id="k5W-7P-uNS"/>
+                            <constraint firstItem="nRj-6d-iA5" firstAttribute="centerX" secondItem="Sf5-nJ-W82" secondAttribute="centerX" constant="-60" id="kN5-0T-lxM"/>
                             <constraint firstItem="7DO-Ja-Wtf" firstAttribute="centerX" secondItem="Sf5-nJ-W82" secondAttribute="centerX" id="ohc-HD-50i"/>
+                            <constraint firstItem="e0C-0S-BsS" firstAttribute="width" secondItem="e0C-0S-BsS" secondAttribute="height" multiplier="100:100" id="td6-te-q3X"/>
                             <constraint firstItem="Gjg-hL-mZE" firstAttribute="centerX" secondItem="Sf5-nJ-W82" secondAttribute="centerX" id="u6l-M7-8hS"/>
+                            <constraint firstItem="e0C-0S-BsS" firstAttribute="centerX" secondItem="Sf5-nJ-W82" secondAttribute="centerX" constant="110" id="uf6-e5-rZV"/>
+                            <constraint firstItem="e0C-0S-BsS" firstAttribute="centerY" secondItem="Sf5-nJ-W82" secondAttribute="centerY" constant="-100" id="wbL-1d-cK1"/>
                             <constraint firstItem="7DO-Ja-Wtf" firstAttribute="centerY" secondItem="Sf5-nJ-W82" secondAttribute="centerY" constant="290" id="xU7-UR-wDN"/>
                             <constraint firstItem="uMB-HB-3Wj" firstAttribute="centerX" secondItem="Sf5-nJ-W82" secondAttribute="centerX" id="zd7-J9-gya"/>
                         </constraints>
@@ -131,6 +183,8 @@
     </scenes>
     <resources>
         <image name="Instructions (1)" width="166.5" height="166.5"/>
+        <image name="easy_mode" width="166.5" height="166.5"/>
+        <image name="hard_mode" width="166.5" height="166.5"/>
         <image name="play" width="341.5" height="341.5"/>
         <image name="spaceship_bg_2" width="360" height="640"/>
         <systemColor name="systemBackgroundColor">

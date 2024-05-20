@@ -18,6 +18,7 @@ class TutorialViewController: UIViewController {
         
         if let view = self.view as! SKView? {
             // Load the SKScene from 'GameScene.sks'
+            view.showsNodeCount = false
             if let scene = SKScene(fileNamed: "TutorialScene") {
                 // Set the scale mode to scale to fit the window
                 scene.scaleMode = .aspectFill
@@ -29,7 +30,6 @@ class TutorialViewController: UIViewController {
             view.ignoresSiblingOrder = true
             
             view.showsFPS = true
-            view.showsNodeCount = true
         }
     }
     

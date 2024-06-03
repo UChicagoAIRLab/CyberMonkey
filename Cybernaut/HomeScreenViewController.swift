@@ -7,10 +7,10 @@
 //
 
 import Foundation
-
 import UIKit
 
 class HomeScreenViewController: UIViewController {
+    @IBOutlet weak var modeLabel: UILabel!
     public var IsGamePlayModeHard = false
     
     override func viewDidLoad() {
@@ -44,6 +44,11 @@ class HomeScreenViewController: UIViewController {
       if sender.title(for: .normal) == "EasyMode" {
           IsGamePlayModeHard = false
           print("Set IsGamePlayModeHard to", IsGamePlayModeHard)
+          let gameViewController = self.storyboard!.instantiateViewController(withIdentifier: "GameViewController") as! GameViewController
+            // Set the game mode property
+          gameViewController.isgameHard = IsGamePlayModeHard
+          print("gameViewController.isgameHard: ", gameViewController.isgameHard)
+          self.present(gameViewController, animated: true)
       }
     }
     
@@ -51,9 +56,11 @@ class HomeScreenViewController: UIViewController {
       if sender.title(for: .normal) == "HardMode" {
           IsGamePlayModeHard = true
           print("Set IsGamePlayModeHard to", IsGamePlayModeHard)
+          let gameViewController = self.storyboard!.instantiateViewController(withIdentifier: "GameViewController") as! GameViewController
+            // Set the game mode property
+          gameViewController.isgameHard = IsGamePlayModeHard
+          print("gameViewController.isgameHard: ", gameViewController.isgameHard)
+          self.present(gameViewController, animated: true)
       }
     }
-    
-    
-    
 }

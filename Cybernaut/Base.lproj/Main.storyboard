@@ -122,6 +122,17 @@
                                     <action selector="hard_mode:" destination="9ac-Ph-7v6" eventType="touchUpInside" id="Zvo-0Q-4Rt"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bCv-Zz-Cqg" userLabel="Level">
+                                <rect key="frame" x="0.0" y="428" width="834" height="37"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="bCv-Zz-Cqg" secondAttribute="height" multiplier="2:1" id="iWu-Ks-nGu"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="37" id="uHW-bx-g6i"/>
+                                    <constraint firstAttribute="height" constant="37" id="xXt-5x-tqu"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="34"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="q4m-Gr-KG5"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -130,8 +141,10 @@
                             <constraint firstItem="nRj-6d-iA5" firstAttribute="centerY" secondItem="Sf5-nJ-W82" secondAttribute="centerY" constant="-100" id="34b-An-Tkr"/>
                             <constraint firstItem="nRj-6d-iA5" firstAttribute="width" secondItem="nRj-6d-iA5" secondAttribute="height" multiplier="100:100" id="6DF-yb-He0"/>
                             <constraint firstItem="e0C-0S-BsS" firstAttribute="width" secondItem="e0C-0S-BsS" secondAttribute="height" multiplier="100:100" id="8Qf-sn-BXc"/>
+                            <constraint firstItem="bCv-Zz-Cqg" firstAttribute="centerY" secondItem="Sf5-nJ-W82" secondAttribute="centerY" constant="-150" id="HXv-U3-eNs"/>
                             <constraint firstItem="e0C-0S-BsS" firstAttribute="width" secondItem="e0C-0S-BsS" secondAttribute="height" multiplier="100:100" id="XBM-5s-RD2"/>
                             <constraint firstItem="e0C-0S-BsS" firstAttribute="width" secondItem="e0C-0S-BsS" secondAttribute="height" multiplier="100:100" id="ayF-Xr-M4l"/>
+                            <constraint firstItem="bCv-Zz-Cqg" firstAttribute="centerX" secondItem="Sf5-nJ-W82" secondAttribute="centerX" id="g1x-6Z-xVK"/>
                             <constraint firstItem="Gjg-hL-mZE" firstAttribute="centerY" secondItem="Sf5-nJ-W82" secondAttribute="centerY" constant="136" id="gky-D7-dJO"/>
                             <constraint firstItem="nRj-6d-iA5" firstAttribute="width" secondItem="nRj-6d-iA5" secondAttribute="height" multiplier="100:100" id="k5W-7P-uNS"/>
                             <constraint firstItem="nRj-6d-iA5" firstAttribute="centerX" secondItem="Sf5-nJ-W82" secondAttribute="centerX" constant="-60" id="kN5-0T-lxM"/>
@@ -145,6 +158,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Loz-J9-knA"/>
+                    <connections>
+                        <outlet property="modeLabel" destination="bCv-Zz-Cqg" id="aD4-0D-4hn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dHJ-or-5MT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

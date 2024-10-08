@@ -500,7 +500,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate, StackViewDelegate {
     }
     
     func updateTFLabel() {
-        TFLabel.position.x = player.position.x
+        TFLabel.position.x = 0
         TFLabel.position.y = player.position.y - (size.height / 8)
     }
     

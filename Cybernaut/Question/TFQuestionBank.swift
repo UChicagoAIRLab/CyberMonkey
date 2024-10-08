@@ -25,7 +25,7 @@ class TFQuestionBank {
         /* Easy mode T/F Privacy*/
         list.append(TFQuestion(questionText: "\"password123\" is a good password choice.", theme: "privacy", correctAnswerText: 1, is_hardness: false))
         list.append(TFQuestion(questionText: "\"qwerty\" is a strong and secure password.", theme: "privacy", correctAnswerText: 1, is_hardness: false))
-        list.append(TFQuestion(questionText: "\"P@ssw0rd!\" is a strong password.", theme: "privacy", correctAnswerText: 0, is_hardness: false))
+        list.append(TFQuestion(questionText: "\"P@ssw0rd!\" is a strong password.", theme: "privacy", correctAnswerText: 1, is_hardness: false))
         list.append(TFQuestion(questionText: "\"123456\" is a strong password.", theme: "privacy", correctAnswerText: 1, is_hardness: false))
         list.append(TFQuestion(questionText: "\"iloveyou\" is a good password because it's easy to remember.", theme: "privacy", correctAnswerText: 1, is_hardness: false))
         list.append(TFQuestion(questionText: "A \"strong\" password is one that is easy to guess.", theme: "privacy", correctAnswerText: 1, is_hardness: false))
@@ -34,10 +34,8 @@ class TFQuestionBank {
         list.append(TFQuestion(questionText: "A good password includes your name and birthdate.", theme: "privacy", correctAnswerText: 1, is_hardness: false))
         list.append(TFQuestion(questionText: "It's safe to share your password with your friends.", theme: "privacy", correctAnswerText: 1, is_hardness: false))
         list.append(TFQuestion(questionText: "A \"strong\" password is one that is easy to guess.", theme: "privacy", correctAnswerText: 1, is_hardness: false))
-        list.append(TFQuestion(questionText: "A \"strong\" password is difficult to guess and has uppercase letters and special characters.", theme: "privacy", correctAnswerText: 0, is_hardness: false))
         
         /* Hard T/F questions */
-        list.append(TFQuestion(questionText: "Clicking on links in unsolicited emails is safe.", theme: "social media", correctAnswerText: 0, is_hardness: true))
         list.append(TFQuestion(questionText: "Public Wi-Fi networks are always secure.", theme: "privacy", correctAnswerText: 0, is_hardness: true))
         list.append(TFQuestion(questionText: "Providing personal information in response to a text message claiming you've won a prize is safe.", theme: "social media", correctAnswerText: 0, is_hardness: true))
         list.append(TFQuestion(questionText: "Downloading software from unknown sources is safe.", theme: "privacy", correctAnswerText: 0, is_hardness: true))

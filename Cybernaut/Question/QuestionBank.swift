@@ -72,7 +72,7 @@ class QuestionBank {
                              choiceA: "Because it can help strangers find out where you are",
                              choiceB: "Because it can make you popular",
                              choiceC: "Because it makes it easier to meet new friends",
-                             correctAnswerText: 1,
+                             correctAnswerText: 0,
                              is_hardBool: false))
 
         list.append(Question(questionText: "How can you stop sharing your location on social media?",
